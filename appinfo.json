@@ -1,0 +1,59 @@
+{
+  "uuid": "74460383-8a0f-4bb6-971f-8937c2ed4441",
+  "shortName": "FestiWatch",
+  "longName": "FestiWatch",
+  "companyName": "Pebble Technology",
+  "versionCode": 2,
+  "versionLabel": "2.0",
+  "watchapp": {
+    "watchface": false
+  },
+  "capabilities": [
+    "location"
+  ],
+  "appKeys": {
+    "PARTY_NAME_KEY":     0,
+    "PARTY_LOCATION_KEY": 1,
+    "PARTY_VISITOR_KEY":  2,
+    "PARTY_ID_KEY":       3,
+    "MUSIC_ICON_KEY":     4,
+    "MUSIC_DJ_KEY":       5,
+    "MUSIC_TIME_KEY":     6,
+    "MUSIC_AREA_KEY":     7
+  },
+  "resources": {
+    "media": [
+      {
+        "type": "png",
+        "name": "IMAGE_MUSIC",
+        "file": "img/music.png"
+      },
+      {
+        "type": "png",
+        "name": "ICON_PEOPLE",
+        "file": "img/people.png"
+      },
+      {
+        "type": "png",
+        "name": "ICON_UP",
+        "file": "img/up.png"
+      },
+      {
+        "type": "png",
+        "name": "ICON_DOWN",
+        "file": "img/down.png"
+      },
+      {
+        "type": "png",
+        "name": "ICON_TICK",
+        "file": "img/tick.png"
+      }
+    ]
+  },
+  "targetPlatforms": [
+    "aplite",
+    "basalt",
+    "chalk"
+  ],
+  "sdkVersion": "3"
+}
