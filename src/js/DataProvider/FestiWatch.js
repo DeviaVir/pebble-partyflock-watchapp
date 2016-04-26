@@ -2,6 +2,7 @@
 
 var ajax = require('../lib/ajax');
 var UI = require('../ui');
+var moment = require('../vendor/moment');
 var current_watch = require('../WatchInfo.js');
 
 function showLineup(lineups, name) {
@@ -31,8 +32,9 @@ function showLineup(lineups, name) {
 var provider = {
   loadSingle: function(loading, error, id) {
     loading.show();
-    
-    var url = 'http://festiwatch.pebble.sillevis.net/party/' + id;
+
+    var now = moment().format('YYYYMMDD');
+    var url = 'https://festiwatch.pebble.sillevis.net/party/' + id + '?cache=' + now;
     ajax({
       url: url,
       method: 'GET',
@@ -98,11 +100,13 @@ var provider = {
     if(latitude && longitude) {
       params += '&latitude=' + latitude + '&longitude=' + longitude;
     }
+    var now = moment().format('YYYYMMDD'); 
+    params += '&cache=' + now;
     
     splash.hide();
     loading.show();
 
-    var url = 'http://festiwatch.pebble.sillevis.net/' + params;
+    var url = 'https://festiwatch.pebble.sillevis.net/' + params;
     ajax({
       url: url,
       method: 'GET',
@@ -112,7 +116,7 @@ var provider = {
         loading.hide();
 
         var items = [];
-        for (var i = 0 ; i < response.data.length ; i++) {
+        for( var i = 0 ; i < response.data.length ; i++ ) {
           items.push({
             title: response.data[i].name,
             subtitle: response.data[i].location + ': ' + response.data[i].visitors + ' visitors',
