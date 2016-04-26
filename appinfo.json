@@ -1,59 +1,56 @@
 {
-  "uuid": "74460383-8a0f-4bb6-971f-8937c2ed4441",
-  "shortName": "FestiWatch",
-  "longName": "FestiWatch",
-  "companyName": "Pebble Technology",
-  "versionCode": 2,
-  "versionLabel": "2.0",
-  "watchapp": {
-    "watchface": false
-  },
+  "appKeys": {},
   "capabilities": [
     "location"
   ],
-  "appKeys": {
-    "PARTY_NAME_KEY":     0,
-    "PARTY_LOCATION_KEY": 1,
-    "PARTY_VISITOR_KEY":  2,
-    "PARTY_ID_KEY":       3,
-    "MUSIC_ICON_KEY":     4,
-    "MUSIC_DJ_KEY":       5,
-    "MUSIC_TIME_KEY":     6,
-    "MUSIC_AREA_KEY":     7
-  },
+  "companyName": "Chase Sillevis",
+  "longName": "FestiWatch",
   "resources": {
     "media": [
       {
-        "type": "png",
-        "name": "IMAGE_MUSIC",
-        "file": "img/music.png"
+        "file": "images/menu_icon.png",
+        "menuIcon": true,
+        "name": "IMAGE_MENU_ICON",
+        "type": "png"
       },
       {
-        "type": "png",
-        "name": "ICON_PEOPLE",
-        "file": "img/people.png"
+        "file": "images/logo_splash.png",
+        "name": "IMAGE_LOGO_SPLASH",
+        "type": "png"
       },
       {
-        "type": "png",
-        "name": "ICON_UP",
-        "file": "img/up.png"
+        "file": "images/tile_splash.png",
+        "name": "IMAGE_TILE_SPLASH",
+        "type": "png"
       },
       {
-        "type": "png",
-        "name": "ICON_DOWN",
-        "file": "img/down.png"
+        "file": "images/exclamation.png",
+        "name": "IMAGE_EXCLAMATION",
+        "type": "png"
       },
       {
-        "type": "png",
-        "name": "ICON_TICK",
-        "file": "img/tick.png"
+        "file": "images/people.png",
+        "name": "IMAGE_PEOPLE",
+        "type": "png"
+      },
+      {
+        "file": "fonts/UbuntuMono-Regular.ttf",
+        "name": "MONO_FONT_14",
+        "type": "font"
       }
     ]
   },
+  "sdkVersion": "3",
+  "shortName": "FestiWatch",
   "targetPlatforms": [
     "aplite",
     "basalt",
     "chalk"
   ],
-  "sdkVersion": "3"
+  "uuid": "20f13983-db66-42f7-a5ae-0c5144cb8340",
+  "versionCode": 1,
+  "versionLabel": "0.1",
+  "watchapp": {
+    "watchface": false
+  }
 }
